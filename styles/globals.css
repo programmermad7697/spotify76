@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: spotify-circular, spotify-circular-cyrillic,
+    spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, helvetica,
+    arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+}
+
+@layer components {
+  .button {
+    @apply h-5 w-5 cursor-pointer hover:scale-125 transition-transform duration-100 ease-out;
+  }
+}
